@@ -1,4 +1,4 @@
-﻿using Perpetuum.Data;
+using Perpetuum.Data;
 using Perpetuum.Host.Requests;
 using Perpetuum.Zones;
 using Perpetuum.Zones.Intrusion;

@@ -1,4 +1,4 @@
-﻿using Perpetuum.EntityFramework;
+using Perpetuum.EntityFramework;
 using Perpetuum.Host.Requests;
 using Perpetuum.Log;
 using Perpetuum.Zones;

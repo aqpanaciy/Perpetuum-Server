@@ -1,4 +1,4 @@
-﻿namespace Perpetuum.Services.Insurance
+namespace Perpetuum.Services.Insurance
 {
     public enum InsuranceType
     {

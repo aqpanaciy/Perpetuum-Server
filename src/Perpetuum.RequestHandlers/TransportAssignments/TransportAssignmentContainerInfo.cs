@@ -1,4 +1,4 @@
-﻿using Perpetuum.Containers;
+using Perpetuum.Containers;
 using Perpetuum.Host.Requests;
 
 namespace Perpetuum.RequestHandlers.TransportAssignments

@@ -1,4 +1,4 @@
-﻿using System.Data;
+using System.Data;
 using Perpetuum.Data;
 
 namespace Perpetuum.Services.ProductionEngine.CalibrationPrograms

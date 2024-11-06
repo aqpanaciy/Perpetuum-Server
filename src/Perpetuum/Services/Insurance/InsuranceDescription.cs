@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using Perpetuum.Accounting.Characters;
 using Perpetuum.Common;
 using Perpetuum.Common.Loggers.Transaction;

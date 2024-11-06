@@ -1,4 +1,4 @@
-﻿using Perpetuum.Items;
+using Perpetuum.Items;
 
 namespace Perpetuum.Services.MissionEngine
 {

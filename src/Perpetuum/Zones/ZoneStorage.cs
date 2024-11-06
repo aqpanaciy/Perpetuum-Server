@@ -1,4 +1,4 @@
-﻿using Perpetuum.Containers.SystemContainers;
+using Perpetuum.Containers.SystemContainers;
 
 namespace Perpetuum.Zones
 {

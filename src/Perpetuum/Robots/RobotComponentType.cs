@@ -1,4 +1,4 @@
-﻿namespace Perpetuum.Robots
+namespace Perpetuum.Robots
 {
     public enum RobotComponentType : byte
     {

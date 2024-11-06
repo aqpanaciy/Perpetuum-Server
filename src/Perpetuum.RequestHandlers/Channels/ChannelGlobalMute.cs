@@ -1,4 +1,4 @@
-﻿using Perpetuum.Accounting.Characters;
+using Perpetuum.Accounting.Characters;
 using Perpetuum.Data;
 using Perpetuum.Host.Requests;
 

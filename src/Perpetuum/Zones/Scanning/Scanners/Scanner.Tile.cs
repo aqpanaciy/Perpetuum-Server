@@ -1,4 +1,4 @@
-﻿using Perpetuum.EntityFramework;
+using Perpetuum.EntityFramework;
 using Perpetuum.Zones.Scanning.Ammos;
 using Perpetuum.Zones.Scanning.Results;
 using Perpetuum.Zones.Terrains.Materials.Minerals;

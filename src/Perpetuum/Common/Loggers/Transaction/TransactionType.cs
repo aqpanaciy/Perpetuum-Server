@@ -1,4 +1,4 @@
-﻿namespace Perpetuum.Common.Loggers.Transaction
+namespace Perpetuum.Common.Loggers.Transaction
 {
     /// <summary>
     /// Types of the transaction logs. Both corporations and characters.

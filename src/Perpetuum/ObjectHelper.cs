@@ -1,4 +1,4 @@
-﻿
+
 namespace Perpetuum
 {
     public static class ObjectHelper

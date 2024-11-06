@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using Perpetuum.EntityFramework;
 using Perpetuum.ExportedTypes;
 using Perpetuum.Players;

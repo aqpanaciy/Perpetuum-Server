@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using Perpetuum.Data;
 using Perpetuum.EntityFramework;
 using Perpetuum.ExportedTypes;

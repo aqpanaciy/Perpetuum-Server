@@ -1,4 +1,4 @@
-﻿namespace Perpetuum.Zones.PBS.Connections
+namespace Perpetuum.Zones.PBS.Connections
 {
     /// <summary>
     /// Additional information for a connection between two pbs nodes

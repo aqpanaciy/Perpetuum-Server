@@ -1,4 +1,4 @@
-﻿using Perpetuum.EntityFramework;
+using Perpetuum.EntityFramework;
 using Perpetuum.Units;
 
 namespace Perpetuum.Services.MissionEngine.MissionStructures

@@ -1,4 +1,4 @@
-﻿using Perpetuum.Log;
+using Perpetuum.Log;
 
 namespace Perpetuum.Host.Requests
 {

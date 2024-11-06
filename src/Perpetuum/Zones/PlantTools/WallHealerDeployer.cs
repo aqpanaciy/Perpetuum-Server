@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Threading.Tasks;
 using Perpetuum.Deployers;
 using Perpetuum.EntityFramework;

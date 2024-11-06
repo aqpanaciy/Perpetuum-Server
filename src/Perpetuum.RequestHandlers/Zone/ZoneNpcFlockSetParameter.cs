@@ -1,4 +1,4 @@
-﻿using Perpetuum.Host.Requests;
+using Perpetuum.Host.Requests;
 using Perpetuum.Zones.NpcSystem.Flocks;
 using Perpetuum.Zones.NpcSystem.Presences;
 

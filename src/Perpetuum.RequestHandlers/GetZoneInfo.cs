@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using Perpetuum.Collections.Spatial;
 using Perpetuum.Host.Requests;
 using Perpetuum.Zones;

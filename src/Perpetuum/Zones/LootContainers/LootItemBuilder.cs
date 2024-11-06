@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using GenXY.Framework;
 using GenXY.Framework.Builders;
 using Perpetuum.Items;

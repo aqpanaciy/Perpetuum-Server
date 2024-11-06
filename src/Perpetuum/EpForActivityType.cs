@@ -1,4 +1,4 @@
-﻿namespace Perpetuum
+namespace Perpetuum
 {
     public enum  EpForActivityType
     {

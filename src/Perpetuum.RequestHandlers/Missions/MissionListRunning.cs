@@ -1,4 +1,4 @@
-﻿using Perpetuum.Host.Requests;
+using Perpetuum.Host.Requests;
 using Perpetuum.Services.MissionEngine.MissionProcessorObjects;
 
 namespace Perpetuum.RequestHandlers.Missions

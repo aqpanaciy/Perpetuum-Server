@@ -1,4 +1,4 @@
-﻿using Perpetuum.EntityFramework;
+using Perpetuum.EntityFramework;
 
 namespace Perpetuum.Items.Templates
 {

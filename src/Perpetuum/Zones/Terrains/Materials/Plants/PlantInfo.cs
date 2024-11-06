@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using Perpetuum.Log;
 
 namespace Perpetuum.Zones.Terrains.Materials.Plants

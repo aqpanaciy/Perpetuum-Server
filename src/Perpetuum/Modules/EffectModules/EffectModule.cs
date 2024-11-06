@@ -1,4 +1,4 @@
-﻿using Perpetuum.StateMachines;
+using Perpetuum.StateMachines;
 using Perpetuum.Units;
 using Perpetuum.Zones.Effects;
 using Perpetuum.Zones.Locking.Locks;

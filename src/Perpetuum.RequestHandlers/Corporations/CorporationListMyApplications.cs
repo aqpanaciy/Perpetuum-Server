@@ -1,4 +1,4 @@
-﻿using Perpetuum.Groups.Corporations.Applications;
+using Perpetuum.Groups.Corporations.Applications;
 using Perpetuum.Host.Requests;
 
 namespace Perpetuum.RequestHandlers.Corporations

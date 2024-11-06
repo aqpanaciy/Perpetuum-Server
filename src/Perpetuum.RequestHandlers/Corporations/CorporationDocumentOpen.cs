@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using Perpetuum.Groups.Corporations;
 using Perpetuum.Host.Requests;
 

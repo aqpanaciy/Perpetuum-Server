@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using Perpetuum.Zones.PBS.DockingBases;
 
 namespace Perpetuum.Zones.PBS

@@ -1,4 +1,4 @@
-﻿namespace Perpetuum.Modules.Weapons
+namespace Perpetuum.Modules.Weapons
 {
     public enum DamageType
     {

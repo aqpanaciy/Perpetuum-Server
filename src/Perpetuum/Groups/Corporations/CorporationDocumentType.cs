@@ -1,4 +1,4 @@
-﻿namespace Perpetuum.Groups.Corporations
+namespace Perpetuum.Groups.Corporations
 {
     /// <summary>
     /// Corporation document types

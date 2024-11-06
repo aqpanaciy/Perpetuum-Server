@@ -1,4 +1,4 @@
-﻿using Perpetuum.Players;
+using Perpetuum.Players;
 
 namespace Perpetuum.Services.MissionEngine.MissionTargets
 {

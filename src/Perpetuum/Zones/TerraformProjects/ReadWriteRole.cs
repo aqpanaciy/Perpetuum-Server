@@ -1,4 +1,4 @@
-﻿namespace Perpetuum.Zones.TerraformProjects
+namespace Perpetuum.Zones.TerraformProjects
 {
     /// <summary>
     /// General read write role

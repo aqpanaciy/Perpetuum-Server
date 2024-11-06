@@ -1,4 +1,4 @@
-﻿namespace Perpetuum.Zones.PBS
+namespace Perpetuum.Zones.PBS
 {
     /// <summary>
     /// Additional information for a pbs node update

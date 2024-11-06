@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using Perpetuum.Units;
 
 namespace Perpetuum.Zones.Effects

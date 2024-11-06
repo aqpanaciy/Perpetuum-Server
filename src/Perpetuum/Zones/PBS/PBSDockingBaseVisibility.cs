@@ -1,4 +1,4 @@
-﻿namespace Perpetuum.Zones.PBS
+namespace Perpetuum.Zones.PBS
 {
     public enum PBSDockingBaseVisibility
     {

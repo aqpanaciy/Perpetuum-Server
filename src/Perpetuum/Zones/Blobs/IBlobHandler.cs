@@ -1,4 +1,4 @@
-﻿
+
 using Perpetuum.Units;
 
 namespace Perpetuum.Zones.Blobs

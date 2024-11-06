@@ -1,4 +1,4 @@
-﻿namespace Perpetuum.Zones.PBS
+namespace Perpetuum.Zones.PBS
 {
     /// <summary>
     /// Energy state of a pbs node

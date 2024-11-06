@@ -1,4 +1,4 @@
-﻿using Perpetuum.Common.Loggers.Transaction;
+using Perpetuum.Common.Loggers.Transaction;
 
 namespace Perpetuum.Accounting.Characters
 {

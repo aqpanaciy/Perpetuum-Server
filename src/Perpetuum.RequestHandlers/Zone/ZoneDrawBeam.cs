@@ -1,4 +1,4 @@
-﻿using Perpetuum.ExportedTypes;
+using Perpetuum.ExportedTypes;
 using Perpetuum.Host.Requests;
 using Perpetuum.Zones;
 

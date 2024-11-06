@@ -1,4 +1,4 @@
-﻿namespace Perpetuum.Containers
+namespace Perpetuum.Containers
 {
     /// <summary>
     /// Container operation enums

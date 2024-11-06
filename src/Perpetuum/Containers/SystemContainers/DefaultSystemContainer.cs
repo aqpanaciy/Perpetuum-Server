@@ -1,4 +1,4 @@
-﻿using Perpetuum.EntityFramework;
+using Perpetuum.EntityFramework;
 using Perpetuum.ExportedTypes;
 
 namespace Perpetuum.Containers.SystemContainers

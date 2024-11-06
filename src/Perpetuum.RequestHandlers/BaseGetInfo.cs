@@ -1,4 +1,4 @@
-﻿using Perpetuum.Host.Requests;
+using Perpetuum.Host.Requests;
 using Perpetuum.Units.DockingBases;
 using Perpetuum.Zones.PBS.DockingBases;
 

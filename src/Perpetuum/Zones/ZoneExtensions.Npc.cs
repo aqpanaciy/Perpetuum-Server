@@ -1,4 +1,4 @@
-﻿using Perpetuum.Zones.NpcSystem.Flocks;
+using Perpetuum.Zones.NpcSystem.Flocks;
 using Perpetuum.Zones.NpcSystem.Presences;
 
 namespace Perpetuum.Zones

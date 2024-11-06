@@ -1,4 +1,4 @@
-﻿using System.Linq;
+using System.Linq;
 using System.Transactions;
 using Perpetuum.Common.Loggers.Transaction;
 using Perpetuum.Data;

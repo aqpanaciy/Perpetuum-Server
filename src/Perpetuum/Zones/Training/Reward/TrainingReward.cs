@@ -1,4 +1,4 @@
-﻿using Perpetuum.Items;
+using Perpetuum.Items;
 using Perpetuum.Items.Templates;
 
 namespace Perpetuum.Zones.Training.Reward

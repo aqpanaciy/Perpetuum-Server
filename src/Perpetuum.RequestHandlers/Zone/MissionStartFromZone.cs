@@ -1,4 +1,4 @@
-﻿using Perpetuum.Data;
+using Perpetuum.Data;
 using Perpetuum.Host.Requests;
 using Perpetuum.Services.MissionEngine;
 using Perpetuum.Services.MissionEngine.MissionDataCacheObjects;

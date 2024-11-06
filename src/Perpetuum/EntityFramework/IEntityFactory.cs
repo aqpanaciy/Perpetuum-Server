@@ -1,4 +1,4 @@
-﻿
+
 using Perpetuum.IDGenerators;
 
 namespace Perpetuum.EntityFramework

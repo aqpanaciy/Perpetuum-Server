@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using Perpetuum.Accounting.Characters;
 using Perpetuum.Common;

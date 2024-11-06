@@ -1,4 +1,4 @@
-﻿using Perpetuum.Builders;
+using Perpetuum.Builders;
 
 namespace Perpetuum.Zones.Effects
 {

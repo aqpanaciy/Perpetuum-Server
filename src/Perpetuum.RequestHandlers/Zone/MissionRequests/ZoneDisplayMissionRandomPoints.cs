@@ -1,4 +1,4 @@
-﻿using System.Linq;
+using System.Linq;
 using Perpetuum.ExportedTypes;
 using Perpetuum.Host.Requests;
 using Perpetuum.Services.MissionEngine;

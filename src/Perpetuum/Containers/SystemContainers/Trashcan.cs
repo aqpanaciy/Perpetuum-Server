@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using Perpetuum.Data;
 using Perpetuum.Items;
 

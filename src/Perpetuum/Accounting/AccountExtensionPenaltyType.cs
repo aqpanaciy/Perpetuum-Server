@@ -1,4 +1,4 @@
-﻿namespace Perpetuum.Accounting
+namespace Perpetuum.Accounting
 {
     public enum AccountExtensionPenaltyType
     {

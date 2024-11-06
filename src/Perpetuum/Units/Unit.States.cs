@@ -1,4 +1,4 @@
-﻿using Perpetuum.Zones;
+using Perpetuum.Zones;
 
 namespace Perpetuum.Units
 {

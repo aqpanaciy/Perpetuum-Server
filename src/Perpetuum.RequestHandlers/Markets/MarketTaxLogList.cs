@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using Perpetuum.Host.Requests;
 using Perpetuum.Services.MarketEngine;
 

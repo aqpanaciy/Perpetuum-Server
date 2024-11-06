@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using Perpetuum.Modules;
 using Perpetuum.Units;
 using Perpetuum.Zones.DamageProcessors;

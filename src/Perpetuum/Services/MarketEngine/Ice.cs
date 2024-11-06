@@ -1,4 +1,4 @@
-﻿using System.Transactions;
+using System.Transactions;
 using Perpetuum.Accounting;
 using Perpetuum.Accounting.Characters;
 using Perpetuum.Data;

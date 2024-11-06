@@ -1,4 +1,4 @@
-﻿using Perpetuum.IDGenerators;
+using Perpetuum.IDGenerators;
 using Perpetuum.Items.Templates;
 using Perpetuum.Log;
 using Perpetuum.Services.MissionEngine.MissionTargets;

@@ -1,4 +1,4 @@
-﻿using GenXY.Framework.Geometry;
+using GenXY.Framework.Geometry;
 using Perpetuum.Deployers;
 using Perpetuum.EntityFramework;
 using Perpetuum.Players;

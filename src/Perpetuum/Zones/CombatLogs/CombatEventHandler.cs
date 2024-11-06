@@ -1,4 +1,4 @@
-﻿using Perpetuum.Units;
+using Perpetuum.Units;
 using Perpetuum.Zones.DamageProcessors;
 
 namespace Perpetuum.Zones.CombatLogs

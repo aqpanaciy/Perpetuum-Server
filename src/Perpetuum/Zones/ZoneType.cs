@@ -1,4 +1,4 @@
-﻿namespace Perpetuum.Zones
+namespace Perpetuum.Zones
 {
     public enum ZoneType
     {

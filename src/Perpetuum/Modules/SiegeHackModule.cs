@@ -1,4 +1,4 @@
-﻿using Perpetuum.Players;
+using Perpetuum.Players;
 using Perpetuum.Zones.Intrusion;
 using Perpetuum.Zones.Locking.Locks;
 

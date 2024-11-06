@@ -1,4 +1,4 @@
-﻿namespace Perpetuum.Groups.Corporations
+namespace Perpetuum.Groups.Corporations
 {
     /// <summary>
     /// Enum to inform the client about a bulletin change

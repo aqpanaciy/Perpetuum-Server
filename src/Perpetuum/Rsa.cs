@@ -1,4 +1,4 @@
-﻿//#define PUBLICWORK
+//#define PUBLICWORK
 
 using System.Linq;
 using System.Numerics;

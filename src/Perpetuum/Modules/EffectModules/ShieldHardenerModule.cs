@@ -1,4 +1,4 @@
-﻿namespace Perpetuum.Modules.EffectModules
+namespace Perpetuum.Modules.EffectModules
 {
 /*
 

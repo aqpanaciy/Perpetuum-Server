@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using Perpetuum.EntityFramework;
 using Perpetuum.Items.Ammos;
 using Perpetuum.Modules;

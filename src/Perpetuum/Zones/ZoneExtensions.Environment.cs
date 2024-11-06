@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Linq;
 using Perpetuum.EntityFramework;
 using Perpetuum.Log;

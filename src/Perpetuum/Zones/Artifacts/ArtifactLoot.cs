@@ -1,4 +1,4 @@
-﻿using System.Data;
+using System.Data;
 using Perpetuum.Builders;
 using Perpetuum.Data;
 using Perpetuum.Services.Looting;

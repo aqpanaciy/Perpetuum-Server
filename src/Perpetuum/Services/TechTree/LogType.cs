@@ -1,4 +1,4 @@
-﻿namespace Perpetuum.Services.TechTree
+namespace Perpetuum.Services.TechTree
 {
     public enum LogType
     {

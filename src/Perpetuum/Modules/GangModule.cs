@@ -1,4 +1,4 @@
-﻿using Perpetuum.ExportedTypes;
+using Perpetuum.ExportedTypes;
 using Perpetuum.Items;
 using Perpetuum.Modules.EffectModules;
 using Perpetuum.Zones.Effects;

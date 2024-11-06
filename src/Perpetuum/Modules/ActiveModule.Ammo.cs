@@ -1,4 +1,4 @@
-﻿using System.Linq;
+using System.Linq;
 using Perpetuum.Containers;
 using Perpetuum.EntityFramework;
 using Perpetuum.Items.Ammos;

@@ -1,4 +1,4 @@
-﻿namespace Perpetuum.Zones.Blobs.BlobEmitters
+namespace Perpetuum.Zones.Blobs.BlobEmitters
 {
     public interface IBlobEmitter
     {

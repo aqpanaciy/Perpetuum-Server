@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Threading;
 using Perpetuum.Data;
 using Perpetuum.Log;

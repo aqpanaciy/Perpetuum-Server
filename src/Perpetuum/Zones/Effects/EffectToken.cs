@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using Perpetuum.IDGenerators;
 
 namespace Perpetuum.Zones.Effects

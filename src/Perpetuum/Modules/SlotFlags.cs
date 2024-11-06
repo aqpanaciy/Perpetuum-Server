@@ -1,4 +1,4 @@
-﻿namespace Perpetuum.Modules
+namespace Perpetuum.Modules
 {
     /// <summary>
     /// Types for module slots

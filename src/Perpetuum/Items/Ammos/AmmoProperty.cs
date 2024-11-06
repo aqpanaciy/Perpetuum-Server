@@ -1,4 +1,4 @@
-﻿using Perpetuum.ExportedTypes;
+using Perpetuum.ExportedTypes;
 
 namespace Perpetuum.Items.Ammos
 {

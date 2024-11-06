@@ -1,4 +1,4 @@
-﻿namespace Perpetuum.Services.Social
+namespace Perpetuum.Services.Social
 {
     public enum SocialState : byte
     {

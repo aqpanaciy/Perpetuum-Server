@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using Perpetuum.Players;
 
 namespace Perpetuum.Zones.PBS.EffectNodes

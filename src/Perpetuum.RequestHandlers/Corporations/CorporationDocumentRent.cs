@@ -1,4 +1,4 @@
-﻿using Perpetuum.Data;
+using Perpetuum.Data;
 using Perpetuum.Groups.Corporations;
 using Perpetuum.Host.Requests;
 

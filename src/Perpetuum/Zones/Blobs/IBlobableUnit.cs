@@ -1,4 +1,4 @@
-﻿
+
 namespace Perpetuum.Zones.Blobs
 {
     public interface IBlobableUnit

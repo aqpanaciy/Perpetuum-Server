@@ -1,4 +1,4 @@
-﻿namespace Perpetuum.Items.Templates
+namespace Perpetuum.Items.Templates
 {
     public interface IRobotTemplateServices
     {

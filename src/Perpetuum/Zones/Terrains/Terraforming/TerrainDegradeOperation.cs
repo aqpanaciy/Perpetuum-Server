@@ -1,4 +1,4 @@
-﻿using Perpetuum.Zones.PBS;
+using Perpetuum.Zones.PBS;
 using Perpetuum.Zones.Terrains.Terraforming.Operations;
 
 namespace Perpetuum.Zones.Terrains.Terraforming

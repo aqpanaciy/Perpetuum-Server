@@ -1,4 +1,4 @@
-﻿using Perpetuum.Services.ProductionEngine;
+using Perpetuum.Services.ProductionEngine;
 
 namespace Perpetuum.Zones.PBS.ProductionNodes
 {

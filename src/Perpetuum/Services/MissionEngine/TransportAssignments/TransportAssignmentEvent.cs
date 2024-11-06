@@ -1,4 +1,4 @@
-﻿namespace Perpetuum.Services.MissionEngine.TransportAssignments
+namespace Perpetuum.Services.MissionEngine.TransportAssignments
 {
     /// <summary>
     /// Transport assignment event

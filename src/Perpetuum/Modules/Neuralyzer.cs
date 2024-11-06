@@ -1,4 +1,4 @@
-﻿using Perpetuum.Players;
+using Perpetuum.Players;
 using Perpetuum.Units;
 using Perpetuum.Zones;
 

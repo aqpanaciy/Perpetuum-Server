@@ -1,4 +1,4 @@
-﻿namespace Perpetuum.Common
+namespace Perpetuum.Common
 {
     public static class GenxyVersion
     {

@@ -1,4 +1,4 @@
-﻿using Perpetuum.Containers;
+using Perpetuum.Containers;
 using Perpetuum.EntityFramework;
 using Perpetuum.ExportedTypes;
 using Perpetuum.Items;

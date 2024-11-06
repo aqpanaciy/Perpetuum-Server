@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using Perpetuum.Accounting.Characters;
 using Perpetuum.Log;
 using Perpetuum.Services.MissionEngine.Missions;

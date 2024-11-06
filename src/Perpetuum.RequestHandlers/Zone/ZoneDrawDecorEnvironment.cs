@@ -1,4 +1,4 @@
-﻿using Perpetuum.Data;
+using Perpetuum.Data;
 using Perpetuum.Host.Requests;
 
 namespace Perpetuum.RequestHandlers.Zone

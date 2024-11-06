@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Linq;
 using Perpetuum.Zones.Terrains.Materials.Plants;
 

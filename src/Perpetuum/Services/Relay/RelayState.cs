@@ -1,4 +1,4 @@
-﻿namespace Perpetuum.Services.Relay
+namespace Perpetuum.Services.Relay
 {
     /// <summary>
     /// Controls the relay's state.

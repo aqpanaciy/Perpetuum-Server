@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using Perpetuum.Accounting;
 using Perpetuum.Host.Requests;
 using Perpetuum.Services.Sessions;

@@ -1,4 +1,4 @@
-﻿namespace Perpetuum.Zones.Terrains
+namespace Perpetuum.Zones.Terrains
 {
     /// <summary>
     /// Controls the plant growth.

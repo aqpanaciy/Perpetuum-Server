@@ -1,4 +1,4 @@
-﻿using System.Data;
+using System.Data;
 using Perpetuum.Data;
 using Perpetuum.Services.MissionEngine.MissionStructures;
 

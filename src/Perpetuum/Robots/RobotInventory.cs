@@ -1,4 +1,4 @@
-﻿using System.Threading.Tasks;
+using System.Threading.Tasks;
 using Perpetuum.Accounting.Characters;
 using Perpetuum.Containers;
 using Perpetuum.EntityFramework;

@@ -1,4 +1,4 @@
-﻿using System.Transactions;
+using System.Transactions;
 using Perpetuum.Data;
 using Perpetuum.Host.Requests;
 using Perpetuum.Zones.Decors;

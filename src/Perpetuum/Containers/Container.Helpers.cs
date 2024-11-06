@@ -1,4 +1,4 @@
-﻿using Perpetuum.Accounting.Characters;
+using Perpetuum.Accounting.Characters;
 using Perpetuum.EntityFramework;
 using Perpetuum.Items;
 using Perpetuum.Units.DockingBases;

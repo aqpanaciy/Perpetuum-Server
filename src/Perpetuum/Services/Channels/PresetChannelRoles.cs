@@ -1,4 +1,4 @@
-﻿namespace Perpetuum.Services.Channels
+namespace Perpetuum.Services.Channels
 {
     public static class PresetChannelRoles
     {

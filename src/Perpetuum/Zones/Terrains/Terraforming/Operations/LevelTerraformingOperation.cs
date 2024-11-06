@@ -1,4 +1,4 @@
-﻿namespace Perpetuum.Zones.Terrains.Terraforming.Operations
+namespace Perpetuum.Zones.Terrains.Terraforming.Operations
 {
     
 

@@ -1,4 +1,4 @@
-﻿using Perpetuum.Log;
+using Perpetuum.Log;
 using Perpetuum.Services.MissionEngine.MissionDataCacheObjects;
 using Perpetuum.Services.MissionEngine.Missions;
 

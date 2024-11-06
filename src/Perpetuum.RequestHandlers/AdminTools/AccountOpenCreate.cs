@@ -1,4 +1,4 @@
-﻿using Perpetuum.Accounting;
+using Perpetuum.Accounting;
 using Perpetuum.Host.Requests;
 using Perpetuum.Services.Relay;
 

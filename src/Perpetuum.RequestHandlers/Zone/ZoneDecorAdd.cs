@@ -1,4 +1,4 @@
-﻿using System.Transactions;
+using System.Transactions;
 using Perpetuum.Data;
 using Perpetuum.EntityFramework;
 using Perpetuum.ExportedTypes;

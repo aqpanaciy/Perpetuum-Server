@@ -1,4 +1,4 @@
-﻿namespace Perpetuum.IDGenerators
+namespace Perpetuum.IDGenerators
 {
     public static class IDGenerator
     {

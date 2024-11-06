@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using Perpetuum.IDGenerators;
 using Perpetuum.Items;
 using Perpetuum.Items.Templates;

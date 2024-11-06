@@ -1,4 +1,4 @@
-﻿namespace Perpetuum.Zones.Terrains.Materials.Plants
+namespace Perpetuum.Zones.Terrains.Materials.Plants
 {
     /// <summary>
     /// Types for every plant

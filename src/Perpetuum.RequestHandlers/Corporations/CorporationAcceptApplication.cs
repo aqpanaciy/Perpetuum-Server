@@ -1,4 +1,4 @@
-﻿using System.Linq;
+using System.Linq;
 using Perpetuum.Accounting.Characters;
 using Perpetuum.Data;
 using Perpetuum.Groups.Corporations;

@@ -1,4 +1,4 @@
-﻿using System.Drawing;
+using System.Drawing;
 using Perpetuum.EntityFramework;
 using Perpetuum.Zones.Scanning.Ammos;
 using Perpetuum.Zones.Terrains;

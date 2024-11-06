@@ -1,4 +1,4 @@
-﻿using Perpetuum.Host.Requests;
+using Perpetuum.Host.Requests;
 using Perpetuum.Log;
 using Perpetuum.Zones;
 using Perpetuum.Zones.Terrains;

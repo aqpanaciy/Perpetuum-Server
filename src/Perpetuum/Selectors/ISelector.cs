@@ -1,4 +1,4 @@
-﻿namespace Perpetuum.Selectors
+namespace Perpetuum.Selectors
 {
     public interface ISelector<out T>
     {

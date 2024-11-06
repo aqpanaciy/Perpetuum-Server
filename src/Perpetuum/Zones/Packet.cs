@@ -1,4 +1,4 @@
-﻿using System.Diagnostics;
+using System.Diagnostics;
 using Perpetuum.Items;
 using Perpetuum.Modules;
 using Perpetuum.Players;
