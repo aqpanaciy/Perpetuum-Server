@@ -51,15 +51,15 @@ namespace Perpetuum.RequestHandlers
 
         private ILogger<ChatLogEvent> GetChatLogger(Character sender, Character target)
         {
-            var x = sender.Id;
-            var y = target.Id;
+            var x = (ulong)sender.Id;
+            var y = (ulong)target.Id;
 
             if (y > x)
             {
                 ObjectHelper.Swap(ref x, ref y);
             }
 
-            var hash = (ulong) x << 32 | (ulong) y;
+            var hash = x << 32 | y;
 
             var senderNick = sender.Nick;
                 
