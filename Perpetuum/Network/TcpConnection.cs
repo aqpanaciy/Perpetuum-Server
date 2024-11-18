@@ -61,8 +61,6 @@ namespace Perpetuum.Network
             if (Interlocked.CompareExchange(ref _isDisconnected, 1, 0) == 1)
                 return;
 
-            Console.Beep(100, 200);
-
             Task.Run(() =>
             {
                 OnDisconnected();
