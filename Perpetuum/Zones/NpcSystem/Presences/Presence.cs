@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Collections.Immutable;
+using System.Diagnostics;
 using System.Linq;
 using Perpetuum.Log;
 using Perpetuum.Timers;
@@ -179,6 +180,7 @@ namespace Perpetuum.Zones.NpcSystem.Presences
             
         }
 
+        [Conditional("DEBUG")]
         protected void Log(string message)
         {
             Logger.Info($"[Presence] ({ToString()}) - {message}");
