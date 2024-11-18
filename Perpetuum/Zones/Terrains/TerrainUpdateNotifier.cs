@@ -12,7 +12,7 @@ namespace Perpetuum.Zones.Terrains
 {
     public class TerrainUpdateNotifier
     {
-        private const int VISIBLE_RANGE = 90;
+        private const int VISIBLE_RANGE = 320;
         private const int TILES_PER_CELL = 32;
 
         private readonly IZone _zone;
