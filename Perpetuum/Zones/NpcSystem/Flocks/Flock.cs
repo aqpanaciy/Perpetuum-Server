@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Collections.Immutable;
+using System.Diagnostics;
 using Perpetuum.EntityFramework;
 using Perpetuum.Log;
 using Perpetuum.Services.Looting;
@@ -167,6 +168,7 @@ namespace Perpetuum.Zones.NpcSystem.Flocks
             return NpcBehavior.Create(Configuration.BehaviorType);
         }
 
+        [Conditional("DEBUG")]
         protected void Log(string message)
         {
             Logger.Info($"[Flock] ({ToString()}) - {message}");
