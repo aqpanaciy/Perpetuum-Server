@@ -6,7 +6,7 @@ namespace Perpetuum.Zones
 {
     public class WeatherService : Process, IWeatherService
     {
-        private static readonly byte[] _weatherLookUp = new byte[320];
+        private static readonly byte[] _weatherLookUp = new byte[byte.MaxValue - byte.MinValue + 1];
 
         private readonly TimeRange _updateInterval;
         private readonly Observable<Packet> _observable;
@@ -18,7 +18,7 @@ namespace Perpetuum.Zones
             //the full cycle
             for (var i = 0; i < _weatherLookUp.Length; i++)
             {
-                _weatherLookUp[i] = (byte)i.Min(255);
+                _weatherLookUp[i] = (byte)i.Min(254);
             }
         }
 
