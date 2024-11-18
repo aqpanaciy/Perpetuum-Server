@@ -93,9 +93,19 @@ namespace Perpetuum.Services.Relay
         public void PostCurrentServerInfoToWebService()
         {
             var serverInfo = GetServerInfo();
-            var data = serverInfo.Serialize();
-            var reply = Http.Post("http://www.perpetuum-online.com/Server_list", data);
-            Logger.DebugInfo(reply);
+            if (serverInfo.IsBroadcast)
+            {
+                var reply = "NONE";
+                try
+                {
+                    var data = serverInfo.Serialize();
+                    reply = Http.Post("http://www.perpetuum-online.com/Server_list", data);
+                }
+                finally
+                {
+                    Logger.DebugInfo(reply);
+                }
+            }
         }
     }
 }
