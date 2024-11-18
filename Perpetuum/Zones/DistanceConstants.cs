@@ -10,7 +10,7 @@ namespace Perpetuum.Zones
         public const double SWITCH_USE_DISTANCE = 3.0;
         public const double ITEMSUPPLY_USE_DISTANCE = 3.0;
        
-        public const double ALARMSWITCH_STAYCLOSE_DISTANCE = 14.0;
+        public const double ALARMSWITCH_STAYCLOSE_DISTANCE = 4.0;
         public const double ITEM_SHOP_DISTANCE = 3.0;
         public const double AREA_BOMB_DISTANCE_TO_STATIONS = 90.0;
         public const double AREA_BOMB_DISTANCE_TO_TELEPORTS = 90.0;
