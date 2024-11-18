@@ -227,7 +227,6 @@
     <Compile Include="Network\EncryptedTcpConnection.cs" />
     <Compile Include="Network\Http.cs" />
     <Compile Include="Network\ITcpConnection.cs" />
-    <Compile Include="Network\SocketExtensions.cs" />
     <Compile Include="Network\TcpConnection.cs" />
     <Compile Include="Network\TcpListenerExtensions.cs" />
     <Compile Include="ObjectCacheExtensions.cs" />
