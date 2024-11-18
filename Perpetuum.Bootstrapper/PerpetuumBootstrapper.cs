@@ -1576,7 +1576,7 @@ namespace Perpetuum.Bootstrapper
             _builder.RegisterType<RelayStateService>().As<IRelayStateService>().SingleInstance();
             _builder.RegisterType<RelayInfoBuilder>();
 
-            _builder.RegisterType<TradeService>().As<ITradeService>();
+            _builder.RegisterType<TradeService>().As<ITradeService>().SingleInstance();
 
             _builder.RegisterType<HostShutDownManager>();
 
