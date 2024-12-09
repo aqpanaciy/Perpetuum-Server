@@ -1006,7 +1006,7 @@ namespace Perpetuum.Zones.NpcSystem
 
         private int CalculateCombatRange()
         {
-            double range = (int)ActiveModules.Where(m => m.IsRanged)
+            double range = (int)ActiveModules.Where(m => m.IsRanged && m.IsOffensive)
                          .Select(module => module.OptimalRange)
                          .Concat(new[] { MaxTargetingRange })
                          .Min();

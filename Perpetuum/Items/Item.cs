@@ -333,6 +333,11 @@ namespace Perpetuum.Items
             item.IsRepackaged = itemInfo.IsRepackaged;
             return item;
         }
+
+        public bool IsOffensive
+        {
+            get { return ED.AttributeFlags.OffensiveModule; }
+        }
     }
 
     public class ItemHelper
