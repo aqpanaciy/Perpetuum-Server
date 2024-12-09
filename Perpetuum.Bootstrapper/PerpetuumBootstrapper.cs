@@ -1392,7 +1392,7 @@ namespace Perpetuum.Bootstrapper
             _builder.RegisterType<PresenceManager>().OnActivated(e =>
             {
                 var pm = e.Context.Resolve<IProcessManager>();
-                pm.AddProcess(e.Instance.AsTimed(TimeSpan.FromSeconds(2)).ToAsync());
+                pm.AddProcess(e.Instance.ToAsync().AsTimed(TimeSpan.FromSeconds(2)));
 
                 e.Instance.LoadAll();
 
@@ -1585,7 +1585,7 @@ namespace Perpetuum.Bootstrapper
             _builder.RegisterType<TerraformHandler>().OnActivated(e =>
             {
                 var pm = e.Context.Resolve<IProcessManager>();
-                pm.AddProcess(e.Instance.AsTimed(TimeSpan.FromMilliseconds(200)).ToAsync());
+                pm.AddProcess(e.Instance.ToAsync().AsTimed(TimeSpan.FromMilliseconds(200)));
             });
 
             _builder.RegisterType<InsuranceHelper>();
@@ -2435,7 +2435,7 @@ namespace Perpetuum.Bootstrapper
             _builder.RegisterType<PBSHighwayHandler>().OnActivated(e =>
             {
                 var pm = e.Context.Resolve<IProcessManager>();
-                pm.AddProcess(e.Instance.AsTimed(TimeSpan.FromMilliseconds(PBSHighwayHandler.DRAW_INTERVAL)).ToAsync());
+                pm.AddProcess(e.Instance.ToAsync().AsTimed(TimeSpan.FromMilliseconds(PBSHighwayHandler.DRAW_INTERVAL)));
             });
 
             _builder.RegisterType<MineralScanResultRepository>();
