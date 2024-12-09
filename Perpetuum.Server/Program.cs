@@ -1,7 +1,10 @@
 using System;
 using System.IO;
+using System.Threading.Tasks;
+using System.Threading;
 using McMaster.Extensions.CommandLineUtils;
 using Perpetuum.Bootstrapper;
+using Mono.Unix;
 
 namespace Perpetuum.Server
 {
@@ -58,18 +61,47 @@ namespace Perpetuum.Server
                 err = app.Execute(args);
                 if (err == 0)
                 {
-                    Console.CancelKeyPress += (sender,eventArgs) =>
-                    {
-                        Console.WriteLine("");
-                        Console.WriteLine("STOPPING HOST IN 4 SECONDS");
-                        Console.WriteLine("");
-
-                        eventArgs.Cancel = true;
-                        bootstrapper.Stop(TimeSpan.FromSeconds(4));
-                    };
-
                     bootstrapper.Start();
-                    bootstrapper.WaitForStop();
+
+                    using (CancellationTokenSource source = new CancellationTokenSource())
+                    {
+                        int p = (int)Environment.OSVersion.Platform;
+                        if ((p == 4) || (p == 6) || (p == 128))
+                        {
+                            UnixSignal[] signals = new UnixSignal[] {
+                                new UnixSignal(Mono.Unix.Native.Signum.SIGINT),
+                                new UnixSignal(Mono.Unix.Native.Signum.SIGTERM),
+                            };
+                            CancellationToken token = source.Token;
+
+                            Task.Run(() =>
+                            {
+                                while (!token.IsCancellationRequested)
+                                {
+                                    int index = UnixSignal.WaitAny(signals, 1000);
+                                    if (index < signals.Length)
+                                    {
+                                        bootstrapper.Stop();
+                                        break;
+                                    }
+                                }
+                            });
+                        }
+
+                        Console.CancelKeyPress += (sender, eventArgs) =>
+                        {
+                            source.Cancel();
+                            eventArgs.Cancel = true;
+
+                            Console.WriteLine("");
+                            Console.WriteLine("STOPPING HOST IN 4 SECONDS");
+                            Console.WriteLine("");
+
+                            bootstrapper.Stop(TimeSpan.FromSeconds(4));
+                        };
+
+                        bootstrapper.WaitForStop();
+                    }
                 }
                 else
                 {
