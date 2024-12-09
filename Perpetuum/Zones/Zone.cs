@@ -220,14 +220,54 @@ namespace Perpetuum.Zones
             Logger.Info($"Unit exited from zone. zone:{Id} eid = {u.InfoString} ({u.CurrentPosition})");
         }
 
-        private ImmutableHashSet<Unit> _updatedUnits = ImmutableHashSet<Unit>.Empty;
+        /// <summary>
+        /// Mutex for adding and handling updated units.
+        /// </summary>
+        private Mutex _updateMutex = new Mutex();
+
+        /// <summary>
+        /// In which set is the unit added?
+        /// </summary>
+        private enum UpdatedUntis
+        {
+            None,
+            One,
+            Tow
+        }
+        private UpdatedUntis _updatedUnits = UpdatedUntis.One;
+
+        /// <summary>
+        /// The first set of updated units.
+        /// </summary>
+        private HashSet<Unit> _updatedUnitsOne = new HashSet<Unit>();
+        /// <summary>
+        /// The second set of updated units.
+        /// </summary>
+        private HashSet<Unit> _updatedUnitsTow = new HashSet<Unit>();
 
         private void ProcessUpdatedUnits()
         {
-            ImmutableHashSet<Unit> updatedUnits;
+            HashSet<Unit> updatedUnits = null;
 
-            if ((updatedUnits = Interlocked.CompareExchange(ref _updatedUnits, ImmutableHashSet<Unit>.Empty, _updatedUnits)) == ImmutableHashSet<Unit>.Empty)
+            _updateMutex.WaitOne();
+            // We swap sets for updated units.
+            switch (_updatedUnits)
+            {
+                case UpdatedUntis.One:
+                    updatedUnits = _updatedUnitsOne;
+                    _updatedUnits = UpdatedUntis.Tow;
+                    break;
+                default:
+                    updatedUnits = _updatedUnitsTow;
+                    _updatedUnits = UpdatedUntis.One;
+                    break;
+            }
+            _updateMutex.ReleaseMutex();
+
+            if (updatedUnits.IsNullOrEmpty())
+            {
                 return;
+            }
 
             foreach (var kvp in _units)
             {
@@ -251,6 +291,9 @@ namespace Perpetuum.Zones
                     bTarget?.BlobHandler.UpdateBlob(sourceUnit);
                 }
             }
+
+            // All updated units have been processed, we are clearing the set.
+            updatedUnits.Clear();
         }
 
         private void OnUnitUpdated(Unit unit, UnitUpdatedEventArgs e)
@@ -259,7 +302,18 @@ namespace Perpetuum.Zones
             if (!visibilityUpdated)
                 return;
 
-            ImmutableInterlocked.Update(ref _updatedUnits, h => h.Add(unit));
+            _updateMutex.WaitOne();
+            // Add the updated unit to the current set.
+            switch (_updatedUnits)
+            {
+                case UpdatedUntis.One:
+                    _updatedUnitsOne.Add(unit);
+                    break;
+                default:
+                    _updatedUnitsTow.Add(unit);
+                    break;
+            }
+            _updateMutex.ReleaseMutex();
         }
 
         public IEnumerable<Unit> Units => _units.Values;
