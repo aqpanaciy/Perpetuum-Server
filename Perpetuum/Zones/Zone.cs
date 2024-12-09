@@ -291,17 +291,37 @@ namespace Perpetuum.Zones
             profiler(time);
         }
 
+        /// <summary>
+        /// Maximum refresh period when there are no players in the zone.
+        /// </summary>
+        private readonly TimeSpan NO_PLAYER_INTERVAL = TimeSpan.FromMilliseconds(200);
+
+        /// <summary>
+        /// Zone update time accumulator.
+        /// </summary>
+        private TimeSpan _elapsed = TimeSpan.Zero;
+
         public override void Update(TimeSpan time)
         {
             UpdateSessions(time);
-            
+
             _updateUnitsTimer.Update(time).IsPassed(ProcessUpdatedUnits);
 
-            UpdateUnits(time);
+            // We accumulate time.
+            _elapsed += time;
+            // If there are no players and the time does not exceed the threshold, then we do not update.
+            if (Players.IsNullOrEmpty() && _elapsed < NO_PLAYER_INTERVAL)
+            {
+                return;
+            }
 
-            RiftManager?.Update(time);
-            MiningLogHandler.Update(time);
-            MeasureUpdate(time);
+            UpdateUnits(_elapsed);
+
+            RiftManager?.Update(_elapsed);
+            MiningLogHandler.Update(_elapsed);
+            MeasureUpdate(_elapsed);
+
+            _elapsed = TimeSpan.Zero;
         }
 
         private void UpdateUnits(TimeSpan time)
