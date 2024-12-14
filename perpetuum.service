@@ -1,0 +1,22 @@
+[Unit]
+Description=Server for MMORPG Perpetuum
+After=network.target mssql-server.service
+Documentation=https://github.com/aqpanaciy/perpetuum-classic
+
+[Service]
+CPUAffinity=2-7
+User=perp
+Group=perp
+WorkingDirectory=/var/opt/perpetuum
+ExecStart=mono /var/opt/perpetuum/bin/Perpetuum.Server.exe /var/opt/perpetuum/data
+KillSignal=SIGINT
+Restart=on-failure
+
+# Wait up to 30 minutes for service to start/stop
+TimeoutSec=30min
+# Don't restart if we've restarted more than 3 times in 20 minutes.
+StartLimitInterval=1200
+StartLimitBurst=3
+
+[Install]
+WantedBy=multi-user.target
